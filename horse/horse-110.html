@@ -15,27 +15,22 @@
 	<script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
 	<!-- Include the jQuery Mobile library -->
 	<script type="text/javascript" src="../js/jquery.mobile-1.4.5.min.js"></script>
-	<script type="text/javascript" src="../js/jquery-3.0.0.min.js"></script>
+	<!-- AdMob-->
+	<script type="text/javascript" src="../js/admob.js"></script>
 	<!-- cordova js -->
 	<script src="../cordova.js"></script>
-	<!-- AdMob -->
-	<script type="text/javascript" src="../js/admob/banner.js"></script>
 </head>
 <body>
 
 <div data-role="page" id="horse-110" data-theme="a">
 
 	<div data-role="header" data-position="fixed">
-		<a href="../index.html" data-ajax="false" data-role="button" data-icon="carat-l" data-iconpos="notext" data-theme="a">Кнопка назад</a>
+		<a data-role="button" data-rel="back" data-ajax="false" class="ui-nodisc-icon transparentButton" data-icon="carat-l" data-iconpos="notext" data-theme="a" style="margin-top: 2px;">Кнопка назад</a>
 		<h1>Лошадь скалистых гор (рокки-маунтин)</h1>
 	</div>
 
 	<div data-role="main" class="ui-content">
 
-		<!-- Вызов объявления AdMob -->
-		<script type="text/javascript">admob.createBannerView();</script>
-
-		<!-- Описание породы -->
 		<center><img src="../images/horse/horse-110.jpg"></center>
 		<h3>Лошадь скалистых гор (рокки-маунтин)</h3>
 		<p>Лошадь скалистых гор (рокки-маунтин) является относительно молодой американской породой, возникшей в начале 20-го века.</p>
@@ -47,7 +42,7 @@
 		<p>Эта порода традиционно используется под седлом и в легкой упряжи. Рокки-маунтин неутомимая, очень выносливая лошадь, способная развивать скорость от 11 до 26 км в час и поддерживать ее на протяжении длинных дистанций. Благодаря своей универсальности, прекрасному темпераменту и необычному окрасу они стали популярны по всем Соединенным Штатам и в Канаде.</p>
 
 		<p>Высота рокки-маунтин от 145 до 160 см. Окрас любой сплошной. Идеальным окрасом для лошадей этой породы является красивая шоколадного цвета шерсть со светло-золотистой гривой и хвостом. Это очень красивые лошади, с изящной головой, умными глазами, длинной элегантной шеей, мускулистыми плечами. У них широкая и глубокая грудь, относительно низкая холка, компактное туловище, хорошо оформленный круп и сильные ноги. Обычно у них плечи хорошего строения.</p>
-		<p>Источник: <a href="https://zooclub.ru/" rel="exteral">ZooClub</a></p>
+
 	</div>
 
 </div>

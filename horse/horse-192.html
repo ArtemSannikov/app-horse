@@ -15,27 +15,22 @@
 	<script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
 	<!-- Include the jQuery Mobile library -->
 	<script type="text/javascript" src="../js/jquery.mobile-1.4.5.min.js"></script>
-	<script type="text/javascript" src="../js/jquery-3.0.0.min.js"></script>
+	<!-- AdMob-->
+	<script type="text/javascript" src="../js/admob.js"></script>
 	<!-- cordova js -->
 	<script src="../cordova.js"></script>
-	<!-- AdMob -->
-	<script type="text/javascript" src="../js/admob/banner.js"></script>
 </head>
 <body>
 
 <div data-role="page" id="horse-192" data-theme="a">
 
 	<div data-role="header" data-position="fixed">
-		<a href="../index.html" data-ajax="false" data-role="button" data-icon="carat-l" data-iconpos="notext" data-theme="a">Кнопка назад</a>
+		<a data-role="button" data-rel="back" data-ajax="false" class="ui-nodisc-icon transparentButton" data-icon="carat-l" data-iconpos="notext" data-theme="a" style="margin-top: 2px;">Кнопка назад</a>
 		<h1>Чилийская лошадь</h1>
 	</div>
 
 	<div data-role="main" class="ui-content">
 
-		<!-- Вызов объявления AdMob -->
-		<script type="text/javascript">admob.createBannerView();</script>
-
-		<!-- Описание породы -->
 		<center><img src="../images/horse/horse-192.jpg"></center>
 		<h3>Чилийская лошадь</h3>
 		<p>Чилийская лошадь - древнейшая из пород лошадей, родом из Южной Америки. Первые лошади попали в Чили вместе с Диего Алмагро в 1536 году, однако всерьез разведением лошадей занялись лишь с того времени, как Педро Валдивиа поселился в районе Нью-Толедо (Чили). В 1544 году священник Родриго Гонзалез де Мармолейжо был признан первым местным конезаводчиком. К 19-му веку Чили были признаны как ведущий производитель качественных лошадей в Латинской Америке, а лучшие чилийские лошади экспортировались по всей Америке и даже за океан.</p>
@@ -47,7 +42,7 @@
 		<p>Окрас любой, кроме белого. Это очень экономичная в содержании порода, стойкая к основным лошадиным болезням. Чилийские лошади очень быстро восстанавливают форму после болезней и травм, у них высокий болевой порог. Они всегда с удовольствием работают, имеют послушный характер.</p>
 
 		<p>Породу экспортируют в Австралию, Южную Африку, Бирму, Бразилию, Аргентину и США.</p>
-		<p>Источник: <a href="https://zooclub.ru/" rel="exteral">ZooClub</a></p>
+
 	</div>
 
 </div>

@@ -2,21 +2,21 @@
 	<widget xmlns        = "http://www.w3.org/ns/widgets"
 			xmlns:gap    = "http://phonegap.com/ns/1.0"
 			id           = "com.horse"
-			versionCode  = "4"
-			version      = "1.0.3">
+			versionCode  = "5"
+			version      = "1.1">
 
 			<!-- Название приложения -->
 			<name>Породы лошадей</name>
 
 			<!-- Описание приложения -->
-			<description>Приложение "Породы лошадей" содержит описание 205 пород лошадей с фотоматериалами.</description>
+			<description>Приложение содержит в себе текстовую и графическую информацию о существующих породах лошадей.</description>
 
 			<!-- Автор приложения -->
 			<author href="https://artemsannikov.ru" email="info@artemsannikov.ru">
 				Artem Sannikov
 			</author>
 
-			<!-- Иконки для платформы Android -->
+		    <!-- ###Иконки для платформы Android### -->
 			<platform name="android">
 				<icon density="ldpi" src="res/icons/android/ldpi.png"/>
 				<icon density="mdpi" src="res/icons/android/mdpi.png"/>
@@ -29,15 +29,25 @@
 			<!-- Стартовая страница -->
 			<content src="index.html"></content>
 
-			<!-- Разрешения -->
+			<!-- ###Разрешения### -->
 			<preference name="permissions" value="none"/>
-			<!--<preference name="fullscreen" value="true" />-->
-			<preference name="AllowInlineMediaPlayback" value="true" />
-			<preference name="InAppBrowserStorageEnabled" value="true" />
+
+			<!-- Версия API  -->
+			<!--<preference name="android-minSdkVersion" value="19">-->
+			<preference name="android-targetSdkVersion" value="26" />
+	
+			<!-- разрешение для переноса приложения на SD карту -->
+			<preference name="android-installLocation" value="auto" />
 			
-			<!-- Плагины -->
-			<plugin name="cordova-plugin-whitelist" spec="1" /> <!-- Для открытия внешних ссылок -->
-			<gap:plugin name="phonegap-admob" source="npm"/> <!-- AdMob реклама -->
+			<!--<preference name="fullscreen" value="true" />-->
+
+			<!-- разрешить воспроизведение медиафайлов html5 -->
+			<preference name="AllowInlineMediaPlayback" value="true" />
+
+			<!-- отмена автоматического воспроизведения -->
+			<preference name="MediaPlaybackRequiresUserAction" value="false" />
+			
+			<preference name="InAppBrowserStorageEnabled" value="true" />
 
 			<!-- Доступ к web сайтам -->
 			<access origin="*" />
@@ -50,5 +60,12 @@
 			<platform name="android">
 				<allow-intent href="market:*" />
 			</platform>
+
+			<!-- ###Плагины### -->
+
+			<!-- Для открытия внешних ссылок -->
+			<plugin name="cordova-plugin-whitelist" spec="1" /> 
+			<!-- Admob Google Cordova - Ссылка: https://github.com/appfeel/admob-google-cordova -->
+			<gap:plugin name="phonegap-admob" source="npm"/>
 
 	</widget>

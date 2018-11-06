@@ -15,35 +15,30 @@
 	<script type="text/javascript" src="../../js/jquery-1.11.3.min.js"></script>
 	<!-- Include the jQuery Mobile library -->
 	<script type="text/javascript" src="../../js/jquery.mobile-1.4.5.min.js"></script>
-	<script type="text/javascript" src="../../js/jquery-3.0.0.min.js"></script>
+	<!-- AdMob-->
+	<script type="text/javascript" src="../../js/admob.js"></script>
 	<!-- cordova js -->
 	<script src="../../cordova.js"></script>
-	<!-- AdMob -->
-	<script type="text/javascript" src="../../js/admob/banner.js"></script>
 </head>
 <body>
 
 <div data-role="page" id="about" data-theme="a">
 
 	<div data-role="header">
-		<a data-role="button" data-rel="back" data-icon="carat-l" data-iconpos="notext" data-theme="a">Кнопка назад</a>
+		<a data-role="button" data-rel="back" data-ajax="false" class="ui-nodisc-icon transparentButton" data-icon="carat-l" data-iconpos="notext" data-theme="a" style="margin-top: 2px;">Кнопка назад</a>
 		<h1>О приложении</h1>
 	</div>
 
 	<div data-role="main" class="ui-content">
 
-		<!-- Вызов объявления AdMob -->
-		<script type="text/javascript">admob.createBannerView();</script>
+		<center><p>Версия 1.1</p></center>
 
-		<!-- Текст страницы -->
-		<p style="text-align:center;"><strong>Породы лошадей</strong></p>
-		<p style="text-align:center;">Версия 1.0.3</p>
-
-		<center><img src="../../images/logo.png" width="150"></center>
-		<p style="text-align:center;">Приложение содержит описание 205 пород лошадей с фотоматериалами.</p>
+		<center><p>Приложение содержит в себе текстовую и графическую информацию о существующих породах лошадей.</p></center>
 		
-		<p style="text-align:center;">Разработчик:</p>
-		<p style="text-align:center;">Артём Санников</p>
+		<center><p><a href="https://artemsannikov.ru" rel="external" data-transition="none">www.artemsannikov.ru</a></p></center>
+
+		<center><p>Copyright © 2017 - 2018</p></center>
+
 	</div>
 
 </div>

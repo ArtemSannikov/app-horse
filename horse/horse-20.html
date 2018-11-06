@@ -15,27 +15,22 @@
 	<script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
 	<!-- Include the jQuery Mobile library -->
 	<script type="text/javascript" src="../js/jquery.mobile-1.4.5.min.js"></script>
-	<script type="text/javascript" src="../js/jquery-3.0.0.min.js"></script>
+	<!-- AdMob-->
+	<script type="text/javascript" src="../js/admob.js"></script>
 	<!-- cordova js -->
 	<script src="../cordova.js"></script>
-	<!-- AdMob -->
-	<script type="text/javascript" src="../js/admob/banner.js"></script>
 </head>
 <body>
 
 <div data-role="page" id="horse-20" data-theme="a">
 
 	<div data-role="header" data-position="fixed">
-		<a href="../index.html" data-ajax="false" data-role="button" data-icon="carat-l" data-iconpos="notext" data-theme="a">Кнопка назад</a>
+		<a data-role="button" data-rel="back" data-ajax="false" class="ui-nodisc-icon transparentButton" data-icon="carat-l" data-iconpos="notext" data-theme="a" style="margin-top: 2px;">Кнопка назад</a>
 		<h1>Арденнская лошадь</h1>
 	</div>
 
 	<div data-role="main" class="ui-content">
 
-		<!-- Вызов объявления AdMob -->
-		<script type="text/javascript">admob.createBannerView();</script>
-
-		<!-- Описание породы -->
 		<center><img src="../images/horse/horse-20.jpg"></center>
 		<h3>Арденнская лошадь</h3>
 		<p>Арденнская лошадь самая старая из всех европейских тяжеловозных пород. Один из самых красивых тяжелоупряжных коней, сильный арден ведет свое происхождение с давних времен и получил свое название от одноименной гористой местности на французско-бельгийской границе.</p>
@@ -49,7 +44,7 @@
 		<p>Высота арденнской лошади равняется приблизительно 152 - 163 см в холке. Окрас в основном рыжий, темно-рыжий и гнедой. Строение тела: ровный профиль; большие выразительные глаза; низкий плоский лоб; остроконечные уши; выразительные ноздри; средней длины шея, часто изогнутая; очень сильное плечо; средней массивности туловище с глубокой грудью, короткой спиной и мускулистыми бедрами; широкий круп; короткие сильные мускулистые ноги.</p>
 
 		<p>В конце 19 в. эта порода была завезена в Россию. Использовалась для выведения русского тяжеловоза, прибалтийской арденнской и шведской арденнской пород. Черный окрас в породе очень редок. Этих животных хвалят за их спокойный, терпимый характер, за их способность работать в холмистом ландшафте. Порода довольно экономична в кормлении.</p>
-		<p>Источник: <a href="https://zooclub.ru/" rel="exteral">ZooClub</a></p>
+
 	</div>
 
 </div>

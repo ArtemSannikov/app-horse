@@ -15,29 +15,26 @@
 	<script type="text/javascript" src="../../js/jquery-1.11.3.min.js"></script>
 	<!-- Include the jQuery Mobile library -->
 	<script type="text/javascript" src="../../js/jquery.mobile-1.4.5.min.js"></script>
-	<script type="text/javascript" src="../../js/jquery-3.0.0.min.js"></script>
+	<!-- AdMob-->
+	<script type="text/javascript" src="../../js/admob.js"></script>
 	<!-- cordova js -->
 	<script src="../../cordova.js"></script>
-	<!-- AdMob -->
-	<script type="text/javascript" src="../../js/admob/banner.js"></script>
 </head>
 <body>
 
 <div data-role="page" id="contact" data-theme="a">
 
 	<div data-role="header">
-		<a data-role="button" data-rel="back" data-icon="carat-l" data-iconpos="notext" data-theme="a">Кнопка назад</a>
+		<a data-role="button" data-rel="back" data-ajax="false" class="ui-nodisc-icon transparentButton" data-icon="carat-l" data-iconpos="notext" data-theme="a" style="margin-top: 2px;">Кнопка назад</a>
 		<h1>Контакты</h1>
 	</div>
 
 	<div data-role="main" class="ui-content">
 
-		<!-- Вызов объявления AdMob -->
-		<script type="text/javascript">admob.createBannerView();</script>
+		<p>E-mail: <a href="mailto:info@artemsannikov.ru">info@artemsannikov.ru</a></p>
 
-		<!-- Текст страницы -->
-		<p>Если у вас появились какие-то вопросы или идеи для развития приложения, пожалуйста, пишите на электронную почту:</p>
-		<p><a href="mailto:info@artemsannikov.ru">info@artemsannikov.ru</a></p>
+		<p><strong>P.S</strong>: Не забывайте указывать тему письма.</p>
+		
 	</div>
 
 </div>
