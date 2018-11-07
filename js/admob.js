@@ -5,7 +5,7 @@ function onDeviceReady() {
 	  
 	// Устанавливаем настройки для показа рекламы
 	admob.setOptions({
-		publisherId: "ca-app-pub-2338676251368727/6768643168", //Идентификатор для запроса рекламы от Admob
+		publisherId: "ca-app-pub-2338676251368727/6268184906", //Идентификатор для запроса рекламы от Admob
 		adSize: admob.AD_SIZE.BANNER, //Устанавливаем размер баннерной рекламы
 		/*
 			admob.AD_SIZE.BANNER: 320x50. Standard Banner (Phones and Tablets).
